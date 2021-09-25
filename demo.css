@@ -1,0 +1,40 @@
+.validClass>input {
+    border: 2px solid green;
+  }
+  
+  .validClass .form-control:focus {
+    border-color: green;
+    box-shadow: 0 0 0 0.2rem rgba(33, 93, 30, 0.56)
+  }
+  
+  .invalidClass>input,
+  .invalidClass .form-control:focus {
+    border: 2px solid red;
+  }
+  
+  .inputWrapper {
+    display: inline-block;
+    position: relative
+  }
+  
+  .validClass:after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f00c";
+    visibility: visible;
+    font-weight: 900;
+    color: green;
+    position: absolute;
+    right: 6px;
+    top: 55%;
+  }
+  
+  .invalid-feedback {
+    position: absolute;
+    display: inline-block;
+    bottom: -100px;
+    left: 0px;
+  }
+  
+  .submitBtn {
+    margin-top: 20px;
+  }
